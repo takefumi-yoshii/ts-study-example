@@ -67,4 +67,4 @@ const items: Item[] = [
 
 ### 完成イメージ
 
-[完成イメージ](./image.png)
+![完成イメージ](./image.png)
