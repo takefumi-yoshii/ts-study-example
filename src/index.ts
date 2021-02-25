@@ -31,3 +31,17 @@ const defaultData = [
     value: `This is article.`,
   },
 ];
+
+function createDom(data = defaultData) {
+  data.map((item) => {
+    switch (item.elementType) {
+      case "inputText":
+        return `<input type="text" value="${item.value}" />`;
+      case "select":
+        const rows = item.values.map((value) => `<option>${value}</option>`);
+        return `<select>${rows}</select>`;
+      case "textarea":
+        return `<textarea>"${item.value}</textarea>`;
+    }
+  });
+}
