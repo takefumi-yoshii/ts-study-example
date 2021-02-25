@@ -1,0 +1,15 @@
+{
+  "name": "ts-study-example",
+  "description": "ts-study-example",
+  "private": true,
+  "scripts": {
+    "dev": "parcel src/index.html -d ./public"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.2"
+  }
+}
