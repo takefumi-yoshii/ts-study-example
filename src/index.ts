@@ -4,7 +4,29 @@
 //    - values の場合は Select タグとする
 //    - プロパティの追加は可能だが、削除は不可とする
 
-const defaultData = [
+type InputTextItem = {
+  elementType: "inputText";
+  title: string;
+  value: string;
+};
+type InputNumberItem = {
+  elementType: "inputNumber";
+  title: string;
+  value: number;
+};
+type SelectItem = {
+  elementType: "select";
+  title: string;
+  values: string[];
+};
+type TextareaItem = {
+  elementType: "textarea";
+  title: string;
+  value: string;
+};
+type Item = InputTextItem | SelectItem | TextareaItem;
+
+const defaultData: Item[] = [
   {
     elementType: "inputText",
     title: "氏名",
